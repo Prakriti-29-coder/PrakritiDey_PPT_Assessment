@@ -1,1 +1,8 @@
+# Ubuntu Disk Commands
 
+lsblk
+sudo fdisk /dev/nvme1n1
+sudo mkfs.ext4 /dev/nvme1n1p1
+sudo mkdir /mnt/mydisk
+sudo mount /dev/nvme1n1p1 /mnt/mydisk
+df -h
