@@ -1,0 +1,1 @@
+"EC2 instance i-06da1d9086e49252e is starting."
