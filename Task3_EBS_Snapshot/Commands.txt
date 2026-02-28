@@ -1,0 +1,7 @@
+# Snapshot Restore Verification Commands
+
+lsblk
+sudo mkdir /mnt/restoreddisk
+sudo mount /dev/nvme1n1p1 /mnt/restoreddisk
+df -h
+ls /mnt/restoreddisk
