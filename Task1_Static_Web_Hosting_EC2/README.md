@@ -15,7 +15,7 @@ In this task, I created a virtual server using Amazon EC2 and configured it to h
 
 1. Launched an EC2 instance  
    - Selected Ubuntu Server 22.04 LTS  
-   - Chose instance type t2.micro (Free Tier eligible)  
+   - Chose instance type t3.micro (Free Tier eligible)  
    - Configured Security Group to allow:
      - SSH (Port 22)
      - HTTP (Port 80)
