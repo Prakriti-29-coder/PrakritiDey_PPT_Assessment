@@ -1,0 +1,48 @@
+MySQL Query Output
+==================
+
+1. SHOW DATABASES;
+
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| mydb               |
++--------------------+
+5 rows in set (0.01 sec)
+
+
+2. USE mydb;
+
+Database changed
+
+
+3. CREATE TABLE students (
+       id INT AUTO_INCREMENT PRIMARY KEY,
+       name VARCHAR(50),
+       age INT
+   );
+
+Query OK, 0 rows affected (0.02 sec)
+
+
+4. INSERT INTO students (name, age)
+   VALUES ('Prakriti', 21);
+
+Query OK, 1 row affected (0.01 sec)
+
+
+5. SELECT * FROM students;
+
++----+-----------+-----+
+| id | name      | age |
++----+-----------+-----+
+|  1 | Prakriti  | 21  |
++----+-----------+-----+
+1 row in set (0.00 sec)
+
+End of Output
+=============
