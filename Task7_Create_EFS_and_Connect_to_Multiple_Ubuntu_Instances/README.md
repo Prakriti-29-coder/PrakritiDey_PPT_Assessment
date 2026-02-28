@@ -28,26 +28,18 @@ Mount shared storage across multiple EC2 instances using Amazon EFS (Elastic Fil
    - Installed NFS client (`nfs-common`)
    - Created mount point: `/mnt/efs`
    - Mounted using:
-     ```bash
      sudo mount -t nfs4 -o nfsvers=4.1 fs-05774154e87c8d2ca.efs.us-east-1.amazonaws.com:/ /mnt/efs
-     ```
    - Verified mount with `df -h` and `ls /mnt/efs`
 
 6. **Tested Shared Access**
    - Created a test file on Instance 1:
-     ```bash
      echo "Hello from Instance 1" | sudo tee /mnt/efs/test.txt
-     ```
    - Verified on Instance 2:
-     ```bash
      cat /mnt/efs/test.txt
-     ```
    - Confirmed shared storage works.
 
 7. **Configured Auto-Mount**
    - Added the following line to `/etc/fstab` on both instances:
-     ```text
      fs-05774154e87c8d2ca.efs.us-east-1.amazonaws.com:/ /mnt/efs nfs4 defaults,_netdev 0 0
-     ```
 
 
