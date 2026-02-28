@@ -1,0 +1,11 @@
+# SSH into your EC2 Ubuntu instance
+ssh -i your-key.pem ubuntu@<EC2_PUBLIC_IP>
+
+# Check if the IAM role is attached
+curl http://169.254.169.254/latest/meta-data/iam/info
+
+# List all S3 buckets accessible by the IAM role
+aws s3 ls
+
+# Copy a test file from your S3 bucket to the EC2 instance
+aws s3 cp s3://your-bucket-name/testfile.txt ./testfile.txt
