@@ -24,7 +24,6 @@ The goal of this task is to **understand identity and access management in Azure
 3. Click **Create**.  
 
 > Repeat for multiple users if needed.  
-> These actions are **free** and do not require any licenses.
 
 ---
 
@@ -46,4 +45,3 @@ The goal of this task is to **understand identity and access management in Azure
 
 ---
 
-**Note:** Avoid creating **Premium P1/P2 licenses** or purchasing custom domains, as these are paid features. Only built-in roles and default domain users are free.
