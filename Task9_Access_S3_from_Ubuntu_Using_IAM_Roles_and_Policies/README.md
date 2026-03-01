@@ -33,8 +33,7 @@ Learn how to securely access AWS S3 from an EC2 instance using **IAM Roles**, av
 ### 3. Verify IAM Role Access on Ubuntu
 1. SSH into your Ubuntu EC2 instance:
 ssh -i your-key.pem ubuntu@<EC2_PUBLIC_IP>
-### Verify IAM Role Access on Ubuntu
 2. Check if the IAM role is attached:
 curl http://169.254.169.254/latest/meta-data/iam/info
-3.List S3 buckets using AWS CLI:
+3. List S3 buckets using AWS CLI:
 aws s3 ls
