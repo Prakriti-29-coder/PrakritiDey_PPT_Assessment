@@ -14,14 +14,12 @@ The goal of this task is to **understand Azure Resource Manager (ARM), resource 
 
 ## Steps Performed
 
-### Step 1: Create a Resource Group (Free)
+### Step 1: Create a Resource Group 
 1. Go to **Azure Portal → Resource Groups → + Create**  
 2. Fill in the form:
    - **Resource Group Name:** `RG-Task23`  
    - **Region:** Any region  
 3. Click **Review + Create → Create**  
-
-> Resource Groups are free to create, and no charges occur for an empty group.
 
 ---
 
